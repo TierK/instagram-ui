@@ -1,0 +1,19 @@
+.Post{
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid #C1F6FD;
+    margin: 5px;
+    .userImg{
+        height: 100px;
+
+        img{
+            width: inherit;
+            height: inherit;
+        }
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
