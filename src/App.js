@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div className="App bg-light">
       <Header/>
       <main>
         <Switch>
