@@ -3,16 +3,16 @@
 }
 
 .Post{
-    background: white;
+    background: rgb(38, 42, 48);
     font-size: 14px;
     height: 360px;
     width: 25%;
     margin: 5px 5px;
     border-radius: 3px;
     overflow: hidden;
-    color:rgb(65, 73, 77);  
+    color: rgb(195, 235, 252);
     box-sizing: border-box;
-    text-shadow:  0 0 2px white, 0 0 1px rgb(65, 73, 77);
+    text-shadow:  0 0 1px white, 0 0 0.5px rgb(65, 73, 77);
 
      header{
         margin: 5px;
@@ -25,6 +25,7 @@
         overflow: hidden;
         border-radius: 3px;
         box-sizing: border-box;
+        
 
         img{
             width: 100%;
@@ -37,7 +38,8 @@
         img:hover{
             width: 115%;
             height: auto;   
-            transition: all .4s 
+            transition: all .4s;
+
         }
 
     }
@@ -54,20 +56,23 @@
     }
 
     .postTags{
+        color: rgb(96, 109, 128);
         display: flex;
         width: auto;
         div{
+            text-shadow:  0 0 1px rgb(65, 73, 77), 0 0 0.5px  rgb(195, 235, 252);
             margin-right: 3px;
             padding: 0.5px 1px;
             font-size: 12px;
-            background-image: radial-gradient(rgb(177, 183, 190), rgb(255, 255, 255));
+            background: rgb(60, 66, 73);    
             border-radius: 3px;
-            border: 1px solid rgb(227, 231, 236);
+            border: 1px solid rgb(85, 105, 114);
         }
         div:hover{
-            border: 1px solid rgb(209, 220, 235);
-            background-image: radial-gradient(rgb(176, 198, 223), rgb(255, 255, 255));
-            
+            border: none;
+            background: rgb(60, 66, 73); 
+            transition: .3s ease-in-out;
+            color: rgba(245, 107, 250, 0.89);
         }
     }
 
