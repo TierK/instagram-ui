@@ -107,3 +107,25 @@
         flex: 0 0 60%;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .Post{
+        flex: 0 0 90%;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    footer, header, .userTitle{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .Post{
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
