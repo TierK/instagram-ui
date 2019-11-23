@@ -32,10 +32,9 @@ export default class Feed extends Component {
         return (
 
             <div className="Feed">
-                {this.state.loading ?
+                {this.state.loaded ?
 					<div className="Loader">
                             {<FontAwesomeIcon icon={ faCoffee  } size ="6x" spin />}
-						Loading...
 					</div> :
 					null
 				}
