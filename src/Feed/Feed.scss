@@ -8,9 +8,17 @@
 }
 
 .Feed:first-child{
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .Feed:last-child{
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+} 
+
+
+.Feed .Loader {
+    padding-top: 40px;
+    margin: 0 auto;
+    color: rgb(60, 66, 73);
+    text-shadow:  0 0 1px white, 0 0 0.5px rgb(65, 73, 77);  
 }

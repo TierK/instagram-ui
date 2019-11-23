@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Header.scss';
+import './Header.scss'; 
 import { Link } from 'react-router-dom';
 export default class Header extends Component {
     render() {
         return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">Instagram</a>
+            <a className="navbar-brand" href="#"><img src = "logo.png" style={{width: '60px'}}/></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@ export default class Header extends Component {
                     <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                    </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/profile">Profile</Link>
+                        <Link className="nav-link" to="/profile">Profile</Link> 
                     </li>
                 </ul>
             </div>
