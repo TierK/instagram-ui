@@ -9,17 +9,21 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import CreatePost from './CreatePost/CreatePost';
 
 
 function App() {
   return (
     <Router>
-    <div className="App bg-light">
+    <div className="App">
       <Header/>
-      <main>
+      <main className="main">
         <Switch>
         <Route path="/profile">
           <Profile/>
+          </Route>
+          <Route path="/post/create">
+            <CreatePost/>
           </Route>
         <Route path="/">
           <Feed/>

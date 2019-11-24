@@ -31,7 +31,7 @@ export default class Feed extends Component {
 
         return (
 
-            <div className="Feed">
+            <div className="Feed container">
                 {this.state.loaded ?
 					<div className="Loader">
                             {<FontAwesomeIcon icon={ faCoffee  } size ="6x" spin />}
