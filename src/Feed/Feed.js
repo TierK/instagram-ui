@@ -22,11 +22,12 @@ export default class Feed extends Component {
             });
     }
     render() {
-        function unixDateConvert(unixDate) {
-            const converter = new Date(unixDate * 1000);
-            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-            let date = `${converter.getDate()} ${months[converter.getMonth()]} ${converter.getFullYear()}`;
-            return date;
+
+
+        function formatDate(dateStr){
+            const date = new Date(dateStr);
+            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            return months[date.getMonth()] + ' ' + date.getDate();
         }
 
         return (
@@ -40,9 +41,10 @@ export default class Feed extends Component {
 				}
                 {this.state.posts.map(post => {
                     return (
-                        <Post
+                        <Post 
+                            key = {post.id}
                             id={post.id}
-                            created={unixDateConvert(post.created)}
+                            created={formatDate(post.created)}
                             imgUrl={post.image}
                             title={post.title}
                             likes={post.likes}

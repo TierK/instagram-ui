@@ -10,6 +10,8 @@ import {
   Link
 } from "react-router-dom";
 import CreatePost from './CreatePost/CreatePost';
+import Register from './Register/Register';
+import Login from './Login/Login';
 
 
 function App() {
@@ -25,6 +27,12 @@ function App() {
           <Route path="/post/create">
             <CreatePost/>
           </Route>
+          <Route path="/register">
+                      <Register />
+                  </Route>
+                  <Route path="/login">
+                      <Login />
+                  </Route>
         <Route path="/">
           <Feed/>
           </Route>

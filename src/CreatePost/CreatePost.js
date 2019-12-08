@@ -56,10 +56,13 @@ export default class CreatePost extends Component {
                         return <Form className="CreatePost col-xs-12 col-sm-6">
                         <div className="form-group">
                             <label>Image: </label>
-                            <input type="file" name="image" onChange={(event)=>{
+                            <div class="form-group upload-btn-wrapper"> 
+                            <Button class="btn">Upload</Button>
+                           <input className="hide" type="file" name="image" onChange={(event)=>{
                                setFieldValue('image', event.currentTarget.files[0]);
                             }}/>
                             <ErrorMessage className="alert alert-danger" name="image" component="div" />
+                            </div>
                         </div>
                         <div className="form-group">
                                 <label>Title: </label>
