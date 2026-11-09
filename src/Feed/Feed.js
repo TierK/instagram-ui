@@ -15,10 +15,14 @@ export default class Feed extends Component {
     }
     componentDidMount() {
         this.setState({loaded: true});
-        fetch("https://my-json-server.typicode.com/evyros/fake-api/posts")
+        fetch(process.env.PUBLIC_URL + "/posts.json")
             .then(res => res.json())
             .then(posts => {
                 this.setState({ posts, loaded: false});
+            })
+            .catch(err => {
+                console.error("Failed to load posts", err);
+                this.setState({ loaded: false });
             });
     }
     render() {

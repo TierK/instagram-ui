@@ -6,8 +6,8 @@ import UserBox from './UserBox/UserBox';
 export default class Header extends Component {
     render() {
         return (
-            <Navbar bg="light" expand="lg" class="Header">
-                    <Navbar.Brand href="#home"><img src="logo.png" style={{width: '60px'}}/></Navbar.Brand>
+            <Navbar bg="light" expand="lg" className="Header">
+                    <Navbar.Brand href="#home"><img src="logo.png" alt="Instagram Logo" style={{width: '60px'}}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="menu mr-auto">
