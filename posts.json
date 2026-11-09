@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Morning coffee and fresh air",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "created": "2024-05-15T08:30:00Z",
+    "likes": 42,
+    "tags": ["coffee", "morning", "lifestyle"]
+  },
+  {
+    "id": 2,
+    "title": "Stunning sunset over the lake",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&auto=format&fit=crop&q=80",
+    "created": "2024-06-01T19:45:00Z",
+    "likes": 128,
+    "tags": ["sunset", "nature", "travel"]
+  },
+  {
+    "id": 3,
+    "title": "Developer workspace and minimal setup",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=80",
+    "created": "2024-06-10T14:15:00Z",
+    "likes": 95,
+    "tags": ["coding", "react", "setup"]
+  }
+]
