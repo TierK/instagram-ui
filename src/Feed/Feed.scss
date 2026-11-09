@@ -1,23 +1,15 @@
-.Feed{
+.Feed {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 15px;
     justify-content: center;
     box-sizing: border-box;
 }
 
-.Feed:first-child{
-    padding-top: 25px;
-}
-
-.Feed:last-child{
-    padding-bottom: 25px;
-} 
-
-
 .Feed .Loader {
-    margin: 20% auto;
+    margin: 15% auto;
     color: rgb(195, 235, 252);
-    text-shadow:  0 0 1px white, 0 0 0.5px rgb(65, 73, 77); 
-    
+    text-align: center;
 }

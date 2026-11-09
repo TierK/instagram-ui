@@ -1,15 +1,51 @@
-.navbar{
-    border-bottom: 1px solid rgb(160, 175, 192);
-    box-shadow: 0px 0px 5px 5px rgba(193, 188, 204, 0.51);
-}
+.Header {
+    background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d) !important;
+    padding: 0 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-.navbar-brand{
-    margin: 0;
-    padding: 0;
-    padding-right: 5px;
-}
+    .Header__logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
-.menu{
-    display: flex;
-    justify-content: space-between;
+        .Header__logo-icon {
+            font-size: 1.6rem;
+        }
+
+        .Header__logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.5px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+    }
+
+    .Header__nav-link {
+        color: rgba(255, 255, 255, 0.85) !important;
+        font-weight: 500;
+        font-size: 0.95rem;
+        padding: 8px 16px !important;
+        border-radius: 20px;
+        transition: background 0.2s, color 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.18);
+            color: #fff !important;
+            text-decoration: none;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0.4);
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+    }
 }
