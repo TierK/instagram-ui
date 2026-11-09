@@ -3,7 +3,6 @@ import './Create.scss';
 import { Button } from 'react-bootstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import postModel from '../models/post.model';
-import { tsConstructSignatureDeclaration } from '@babel/types';
 import config from '../config';
 import TagsInput from 'react-tagsinput';
 
