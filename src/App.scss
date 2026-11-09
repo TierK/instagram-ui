@@ -1,9 +1,13 @@
-.App{
-    height: 100%;
-    width: 100%;
-}
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
-.main{
-    background-image: radial-gradient(rgb(2, 10, 27), rgb(196, 205, 212));
-    min-height: 89.8vh;
+    .main {
+        flex: 1;
+        background: #0f0f1a;
+        background-image:
+            radial-gradient(ellipse at top left, rgba(64, 93, 230, 0.15) 0%, transparent 60%),
+            radial-gradient(ellipse at bottom right, rgba(193, 53, 132, 0.15) 0%, transparent 60%);
+    }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import Feed from './Feed/Feed';
 import Profile from './Profile/Profile';
 import {
@@ -37,6 +38,7 @@ function App() {
           </Route>
         </Switch>
       </main>
+      <Footer />
     </div>
     </Router>
   );

@@ -1,131 +1,132 @@
-*, :after, :before{
+*, :after, :before {
     box-sizing: border-box;
 }
 
-.Post{
+.Post {
     flex: 0 0 30%;
-    background: rgb(38, 42, 48);
+    background: #1a1a2e;
     font-size: 14px;
     width: auto;
-    height: 360px;
-    margin: 5px 5px;
-    border-radius: 3px;
+    margin: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    color: rgb(195, 235, 252);
-    box-sizing: border-box;
-    text-shadow:  0 0 1px white, 0 0 0.5px rgb(65, 73, 77);
+    color: rgb(220, 235, 252);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
 
-     header{
-        margin: 5px;
-     }
-     
-    .userImg{   
+    header {
+        padding: 10px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255,255,255,0.04);
+        font-size: 0.82rem;
+        color: rgba(195, 220, 252, 0.75);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .userImg {
         justify-content: center;
         align-self: center;
-        justify-items: center;
         display: flex;
         align-items: center;
-        height: 200px;
+        height: 210px;
         overflow: hidden;
-        border-radius: 3px;
-        box-sizing: border-box;
-        
+        width: 100%;
 
-        img{
- 
+        img {
             width: 100%;
-            transition: all .4s ease-in-out;
-            vertical-align: middle;
-            border-style: none; 
-
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out;
+            display: block;
         }
 
-        img:hover{
-            width: 115%;
-            height: auto;   
-            transition: all .4s;
-
+        &:hover img {
+            transform: scale(1.08);
         }
-
     }
 
-    .userTitle{ 
-        height: 20%;
-        margin: 5px;
+    .userTitle {
+        padding: 10px 14px 4px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #e8f0fe;
+        line-height: 1.4;
     }
 
-    footer, header, .userTitle{
-        padding: 5px;
+    footer {
+        padding: 8px 14px 12px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
     }
 
-    .postTags{
-        color: rgb(96, 109, 128);
-        display: flex;
-        width: auto;
-        div{
-            text-shadow:  0 0 1px rgb(65, 73, 77), 0 0 0.5px  rgb(195, 235, 252);
-            margin-right: 3px;
-            padding: 0.5px 1px;
-            font-size: 12px;
-            background: rgb(60, 66, 73);    
-            border-radius: 3px;
-            border: 1px solid rgb(85, 105, 114);
-        }
-        div:hover{
-            border: none;
-            background: rgb(60, 66, 73); 
-            transition: .3s ease-in-out;
-            color: rgba(245, 107, 250, 0.89);
-        }
-    }
-
-
-    .likes:hover{   
-        transition: .3s ease-in-out;
-        color: rgba(245, 107, 250, 0.89);
-        padding: 1px;
-    }
-   
-} 
-
-.Post:hover{
-    border: 1px solid #D6FAFE;
-    box-shadow: 0px 0px 5px 5px rgba(219,219,219,0.51);
-} 
-
-
-@media only screen and (max-width: 1200px){
-    .Post{
-        flex: 0 0 40%;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .Post{
-        flex: 0 0 60%;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .Post{
-        flex: 0 0 90%;
-        flex-wrap: wrap;
-        height: 400px;
-    }
-    footer, header, .userTitle{
-        padding: 5px;
+    .postTags {
+        color: rgba(150, 170, 220, 0.85);
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 4px;
+
+        div {
+            margin: 0;
+            padding: 2px 7px;
+            font-size: 11px;
+            background: rgba(64, 93, 230, 0.2);
+            border-radius: 20px;
+            border: 1px solid rgba(100, 130, 230, 0.3);
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        div:hover {
+            background: rgba(193, 53, 132, 0.3);
+            border-color: rgba(225, 48, 108, 0.5);
+            color: #ff9ecd;
+        }
+    }
+
+    .likes {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: rgba(195, 220, 252, 0.8);
+        cursor: pointer;
+        transition: color 0.2s;
+
+        &:hover {
+            color: #e1306c;
+        }
     }
 }
 
-@media only screen and (max-width: 300px){
-    .Post{
+.Post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(100, 80, 230, 0.4), 0 2px 8px rgba(0,0,0,0.5);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .Post { flex: 0 0 44%; }
+}
+
+@media only screen and (max-width: 800px) {
+    .Post { flex: 0 0 65%; }
+}
+
+@media only screen and (max-width: 500px) {
+    .Post {
+        flex: 0 0 92%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .Post {
         flex: 0 0 100%;
-        flex-wrap: wrap;
-        height: auto;
     }
 }
